@@ -1,0 +1,36 @@
+{
+  "comments": [
+    {
+      "user": "ivan",
+      "text": "ivan left message #1",
+      "approved": "true",
+      "id": 1
+    },
+    {
+      "user": "ivan",
+      "text": "ivan left message #4",
+      "approved": "true",
+      "id": 4
+    },
+    {
+      "user": "www",
+      "text": "www left message",
+      "approved": "false",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "user": "User1",
+      "access": "user",
+      "approved": false
+    },
+    {
+      "id": 2,
+      "user": "User2",
+      "access": "admin",
+      "approved": false
+    }
+  ]
+}

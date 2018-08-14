@@ -1,0 +1,23 @@
+[
+ {
+  "selector": "input[name='user-name']",
+  "methods": [
+    {"name": "mustContainLetters"},
+    {"name": "length", "args": [">=", 1]},
+    {"name": "length", "args": ["<=", 50]}
+  ]
+},
+{
+  "selector": "input[name='comment-id']",
+  "methods": [
+    {"name": "mustContainNumbers"},
+    {"name": "length", "args": [">=", 1]},
+    {"name": "length", "args": ["<=", 5]}
+  ]
+},  {
+    "selector": "textarea",
+    "methods": [
+      {"name": "inTemplate", "args": ["любые символы", "."]}
+    ]
+}
+]
