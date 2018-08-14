@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <style>
+        .form-wrap {
+            margin: auto;
+            padding: 20px;
+            max-width: 800px
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <div class="form-wrap">
+        <form class="my-form" action="">
+            <details>
+                <summary>01. Validation</summary>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Имя">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" name="phone" class="form-control" placeholder="Телефон">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="email@email.com">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select name="town_choice" class="form-control" id="town_choice">
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" id="town_autocomplete" name="town_autocomplete" class="form-control" placeholder="Город (автокомплит)">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="password" name="password" class="form-control" placeholder="Пароль">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" name="password_repeat" class="form-control" placeholder="Повторите пароль">
+                    </div>
+                </div>
+            </details>
+            <details open>
+                <summary>02. Reviews</summary>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" id="user-name" name="user-name" class="form-control" placeholder="User name" aria-label="User name" aria-describedby="user-name">
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">ID #</span>
+                            </div>
+                            <input type="text" name="comment-id" id="comment-id" class="form-control" placeholder="comment ID" aria-label="comment ID"
+                                aria-describedby="comment-id">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <textarea id="comment-text" name="text" class="form-control" placeholder="Left comment here..." rows="10"></textarea>
+                    </div>
+                </div>
+                <button id = "submit" type="submit" class="btn btn-primary">Отправить</button>
+                <div class="form-row" id="comments"></div>
+                <!-- <div class="form-row" id="comments">
+                    <div class="form-row mt-4 w-100">
+                        <div class="alert alert-success form-row mt-4  w-100">
+                            <div class="form-group col-md-7">
+                                User name:
+                            </div>
+                            <div class="form-group col-md-5">
+                                Comment ID:
+                            </div>
+                            <div class="form-group col-md-12 w-100">
+                                Lorem ipsum
+                            </div>
+                        </div>
+                        <div class="col-md-7"></div>
+                        <button type="button" class="btn btn-outline-danger col-md-5">Vanish</button>
+
+                    </div>
+                    <div class="form-row mt-4" data-commentID="2">
+                        <div class="alert alert-warning form-row mt-4">
+                            <div class="form-group col-md-7">
+                                User name:
+                            </div>
+                            <div class="form-group col-md-5">
+                                Comment ID:
+                            </div>
+                            <div class="form-group col-md-12">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo modi mollitia perspiciatis possimus temporibus? Ab amet
+                                cupiditate dolorum et, ipsa molestias nemo neque nostrum quaerat qui suscipit tempore voluptas,
+                                voluptatem.
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-success col-md-5" data-commentID="2">Proof</button>
+                        <div class="col-md-2"></div>
+                        <button type="button" class="btn btn-outline-danger col-md-5" data-commentID="2">Vanish</button>
+
+                    </div> -->
+                </div>
+            </details>
+        </form>
+        <!-- <div id="dialog-message" title="Download complete">
+        <p>
+            Comment with this ID exists.
+        </p>
+    </div> -->
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
